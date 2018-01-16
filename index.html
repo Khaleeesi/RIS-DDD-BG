@@ -13,7 +13,7 @@
 </head>
 <body>
 <header class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
-  <div class="container-header">
+  <div class="container-header" id="services">
     <div class="container-logo">
 
   </div>
@@ -148,30 +148,32 @@
 <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 
 <script>
-  $("nav ul li a[href^='#']").on('click', function(e) {
+  $(document).ready(function(){
+ 	$("nav ul li a[href^='#']").on('click', function(e) {
 
     // prevent default anchor click behavior
     e.preventDefault();
 
     // store hash
     var hash = this.hash;
-
-    // animate
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 700, function(){
-
-      // when done, add hash to url
-      // (default click behaviour)
-      window.location.hash = hash;
-    });
-
+	
+	if (hash == "#services") {
+	   $('html, body').animate({scrollTop: 0}, 1000, function(){// when done, add hash to url
+				// (default click behaviour)
+				window.location.hash = hash;
+				}); 
+		//window.location.hash = "";
+	} else {
+		$('html, body').animate({scrollTop: $(hash).offset().top}, 1000, function(){// when done, add hash to url
+				// (default click behaviour)
+				window.location.hash = hash;
+				}
+		);
+	}
+	// animate
+    
+	
   });
-
-  $(document).ready(function(){
-    $("nav ul li a[href^='services']").on('click', function(){
-      $('html,body').animate({scrollTop: $(this).offset().top}, 800);
-    });
   });
 
 </script>
