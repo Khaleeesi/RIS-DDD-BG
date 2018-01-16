@@ -1,0 +1,15 @@
+{
+  "name": "RisDDD",
+  "title": "RisDDD",
+  "version": "0.0.1",
+  "homepage": "http://risddd.com",
+  "author": "Christiana Bakratcheva",
+
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.13.0",
+    "font-awesome": "^4.6.3",
+    "gulp": "^3.9.1",
+    "jquery": "^1.11.3"
+  }
+}

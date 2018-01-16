@@ -1,0 +1,241 @@
+body{
+  font-size: 18px;
+  line-height: 18px;
+  background-color: #f5f5f5;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  margin: 0;
+}
+
+header{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  /*font-family: 'Rubik', sans-serif;*/
+  font-family: 'Fira Sans Condensed', sans-serif;
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  left: 0;
+  right: 0;
+}
+
+.navbar-inverse{
+  background-color: #f5f5f5;
+  border: none;
+}
+
+header.navbar-inverse.affix{
+  background-color: #EA7935;
+}
+
+header.navbar-inverse.affix .container-logo{
+  background-image: url("../images/RIS_LOGO_XS.png");
+  width: 18%;
+}
+
+header.navbar-inverse.affix .container-header{
+  height: 100px;
+}
+header.navbar-inverse.affix ul{
+  top: 51px;
+}
+
+.container-logo{
+  background-image: url("../images/RIS_LOGO_SM.png");
+  max-height: 140px;
+}
+header .container-header{
+  width: 1000px;
+  display: flex;
+  margin:0 auto;
+  height: 136px;
+}
+
+.container-logo{
+  width: 28%;
+}
+
+
+header a.logo{
+  /*font-family: 'Fira Sans Condensed', sans-serif;*/
+  width: 40%;
+  font-size: 1.5em;
+  line-height: 1.143em; /* 36px */
+  margin: 0.5714em 0;
+}
+
+nav {
+  width: 72%;
+}
+header.navbar-inverse.affix nav{
+width: 82%;
+}
+header ul{
+  list-style: none;
+  display: flex;
+  float: right;
+  position: relative;
+  top: 91px;
+}
+
+header nav li{
+  padding: 0 15px;
+  position: relative;
+}
+
+header nav a{
+  /*font-family: 'Fira Sans Condensed', sans-serif;*/
+  font-size: 0.67em;
+  text-transform: uppercase;
+  padding: 0 8px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1.286em; /* 18px */
+  margin: 1.286em 0;
+  color: #ab151d;
+  transition: all 300ms ease;
+}
+
+header.navbar-inverse.affix nav a{
+  color: #f5f5f5;
+}
+
+header nav a:active:after{
+  content:'' ;
+  width: 40px;
+  height:40px;
+  background: url("/images/stop_sign.png");
+  top: -12px;
+  right: -16px;
+  position: absolute;
+  vertical-align: top;
+  display: inline-block;
+}
+
+header nav li:hover::after,
+header nav li:active::after {
+  content:'' ;
+  width: 25px;
+  height:25px;
+  background: url("/images/favicon.png");
+  top: -5px;
+  right: -10px;
+  position: absolute;
+  vertical-align: top;
+  display: inline-block;
+}
+
+a:hover{
+  color: #ab151d;
+  text-decoration: none;
+}
+
+section {
+  /*font-family: 'Merriweather', serif;*/
+  font-size: 1em;
+  /*font-family: 'Roboto Slab', serif;*/
+  font-weight: 300;
+  line-height: 1.7143em; /* 36px */
+  margin: 0.8571em 0;
+}
+
+section.section-space{
+  position: relative;
+  top: 50px;
+}
+
+section.white-section{
+  margin: 0 auto;
+  background-color:#fff;
+}
+
+h3{
+  font-size: 2.25em;
+  text-align: center;
+  font-weight: 200;
+  line-height: 1.149em; /* 54px */
+  margin: 0.3830em 0;
+  color: #788E29;
+}
+
+h3.sans{
+  /*font-family: 'Rubik', sans-serif;*/
+  font-family: 'Fira Sans Condensed', sans-serif;
+  letter-spacing: -0.03em;
+}
+
+.three-sections{
+  display: inline-block;
+  width: 31%;
+  float: left;
+  border: 1px solid;
+  height: 120px;
+  text-align: center;
+  padding: 5px;
+}
+
+p {
+  font-size: 1em; /* 21px */
+  line-height: 1.286em; /* 18px */
+  margin: 0 0 0.857em 0;
+  text-align: justify;
+}
+
+
+/*---------------Main content-------------*/
+.wrapper{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.half-section{
+  width: 50%;
+  display: inline-block;
+}
+
+.half-section.left{
+  float: left;
+}
+
+.half-section.right{
+  float: right;
+}
+
+.half-section img{
+  width: 96%;
+  border-radius: 8px;
+}
+
+.half-section p{
+  text-align: justify;
+  margin-right: 40px;
+}
+
+/*---------------About------------*/
+.client-box {
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px -2px #ddd;
+  height: 130px;
+  margin: 25px 25px 25px 0;
+  padding: 0 5px;
+  background-color: #ffffff;
+  width: 13.666667%;
+}
+aside.clients img {
+  margin: 30px auto;
+}
+img.clients-corp {
+  max-width: 120px;
+  max-height: 70px;
+  margin: 30px auto;
+  display: block;
+}
+
+.container{
+  width: 1000px;
+}
+
+p.strong{
+  font-weight: 500;
+}
