@@ -8,10 +8,16 @@
   <link rel="stylesheet" type="text/css" href="css/animate.css">
    <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
   <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <title>РИС ДДД</title>
+  <script>
+    var shiftWindow = function() { scrollBy(0, -100) };
+    window.addEventListener("hashchange", shiftWindow);
+    function load() { if (window.location.hash) shiftWindow(); }
+  </script>
 </head>
-<body>
+<body onload="load()">
 <header class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
   <div class="container-header" id="services">
     <div class="container-logo">
@@ -50,7 +56,7 @@
           <p>Дезинфекция - Унищожаване на патогенни микроорганизми<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec tortor venenatis nisl porta bibendum sit amet sed nulla. In in elit at eros pellentesque vestibulum. Donec at nunc at ex varius hendrerit. Proin eros nibh, venenatis rutrum ipsum et, hendrerit vehicula lacus. Aenean ut lacus vestibulum, sollicitudin libero sed, luctus tortor. Integer eget ipsum scelerisque nibh volutpat laoreet in eu erat. Maecenas vestibulum justo erat, non iaculis metus tristique sed. Nulla facilisi. Cras sit amet euismod velit. Quisque pretium nisl velit, ut imperdiet lorem semper id.</p>
         </div>
         <div class="half-section right">
-          <img src="images/Mold%20Killer.svg" >
+          <img src="images/Mold%20Killer.png" >
         </div>
       <div style="clear: both"></div>
     </div>
@@ -59,7 +65,7 @@
   <section>
     <div class="wrapper">
       <div class="half-section left">
-        <img src="images/Pest%20Control%20Killing%20Some%20Bug.svg" >
+        <img src="images/bug.png" >
       </div>
       <div class="half-section right">
       <p>Дезинсекция - Унищожаване на хлебарки, бълхи, кърлежи, дървеници, комари, оси и мухи;</p>
@@ -90,7 +96,7 @@
         При нас обработката се прави от самият специалист, което позволява <strong>компетентна преценка на място и правилен избор на препарат</strong>.
         С нашите услуги ви гарантираме защитена околна среда от всякакви вредители, които могат да нахлуят в дома ви.
 
-        <strong>Фирмата е създадена през 1993 г.</strong> и разполага с голям практически опит.
+        <strong>Фирмата е създадена през 1993 г.</strong> и разполага с голям практически опит.<br><br>
         Използваните от нас съвременни <strong>препарати нямат мирис и не оставят петна</strong>.
         Те дават възможност за обхващане на различни браншове обекти - <strong>производство,
         съхранение и търговия с хранителни продукти, здравеопазване, детски и учебни заведения,
@@ -101,7 +107,7 @@
         които освен това имат и санитарни разрешителни от <strong>Министерството на Здравеопазването</strong>.
       </p>
     </div>
-    </div>
+
     <aside class="clients">
       <div class="container">
         <div class="row">
@@ -138,7 +144,91 @@
         </div>
       </div>
     </aside>
+    </div>
   </section>
+
+
+  <section class="white-section section-space col-md-12" id="prices">
+    <div class="wrapper">
+      <h3 class="sans">Цени</h3>
+      <div>
+        <p>ЕТ Рис- ДДД предлага на своите клиенти, в зависимост от нуждите на обекта, възможност както за <strong>еднократно обработване, така също и абонаментно третиране </strong>. <br><br>
+          Цени, за най-търсените услуги, които предлагаме:
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+      <div class="prices-m">
+        <div class="content-prices-m">
+
+          До 100м<sup>2</sup>
+          <hr>
+          До 300м<sup>2</sup>
+          <hr>
+          До 1000м<sup>2</sup>
+          <a class="a-toggle-tooltip" data-toggle="tooltip" title="При сключване на едногодишен договор за площ над 1 000 кв.м., правим отсъпки до 50%.">
+          <i class="fas fa-info-circle" ></i>
+          </a>
+            <hr>
+          До 6000м<sup>2</sup>
+          <hr>
+          Над 6000м<sup>2</sup>
+
+        </div>
+      </div>
+        </div>
+
+        <div class="col-md-5">
+      <div class="prices-desinsection-wrapper">
+        <div class="header-prices">
+          <div class="title-prices">
+            Дезинсекция
+          </div>
+          <div class="content-prices">
+            30 лв.
+            <hr>
+            0.25 лв на 1 м<sup>2</sup>
+            <hr>
+            0.15 лв на 1 м<sup>2</sup>
+            <hr>
+            0.10 лв на 1 м<sup>2</sup>
+            <hr>
+            над 6000 м<sup>2</sup> цени по договаряне
+            <hr>
+          </div>
+        </div>
+      </div>
+        </div>
+
+        <div class="col-md-5">
+      <div class="prices-derat-wrapper">
+        <div class="header-prices">
+          <div class="title-prices">
+            Дератизация
+          </div>
+
+          <div class="content-prices">
+            30 лв.
+            <hr>
+            40 лв.
+            <hr>
+            80 лв.
+            <hr>
+            над 1000 м<sup>2</sup> цени по договаряне
+            <hr>
+          </div>
+        </div>
+      </div>
+      </div>
+        <div class="col-md-12">
+          <p>След оглед на обекта- площ, заселеност, сан. хиг.- състояние и др. изисквания на клиента, окончателната цена, начин на плащане, периодичност на обработките подлежат на договаряне. При сключване на едногодишен договор се задължаваме да посещаваме ежемесечно обектите и при наличие на инсекти и гризачи да извършваме обработки, с оглед свеждането им до минимум.
+          <br><br>
+            За допълнителна информация, запитвания за преференциални цени и промоции, не се колебайте да се свържете с нас.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
 </main>
 
@@ -174,6 +264,9 @@
     
 	
   });
+
+    $('[data-toggle="tooltip"]').tooltip();
+
   });
 
 </script>

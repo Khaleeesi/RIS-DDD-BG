@@ -25,7 +25,8 @@ header{
 }
 
 header.navbar-inverse.affix{
-  background-color: #EA7935;
+  background-color: #edb358;
+  z-index: 1000;
 }
 
 header.navbar-inverse.affix .container-logo{
@@ -196,14 +197,22 @@ p {
 .half-section.left{
   float: left;
 }
+.half-section.right img{
+  float: right;
+}
+.half-section.left img{
+  float: left;
+}
+
 
 .half-section.right{
   float: right;
 }
 
 .half-section img{
-  width: 96%;
+  width: 80%;
   border-radius: 8px;
+  margin: 20px 0;
 }
 
 .half-section p{
@@ -238,4 +247,55 @@ img.clients-corp {
 
 p.strong{
   font-weight: 500;
+}
+
+/*---------------Prices------------*/
+.prices-desinsection-wrapper {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#aa474c+0,eda67d+60 */
+  background: radial-gradient(circle at top, #A1BE37 13%, #37bf84 92%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#aa474c', endColorstr='#eda67d', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+  text-align: center;
+  border-radius: 10px;
+  color: #fff;
+}
+/*#788e29, #298f63*/
+/*aa474c, eda67d*/
+.prices-derat-wrapper{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#aa474c+0,eda67d+60 */
+  background: radial-gradient(circle at top, #37bf84 13%, #A1BE37 92%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#aa474c', endColorstr='#eda67d', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+  text-align: center;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.title-prices{
+  padding: 10px 10px 40px 10px;
+  font-size: 2.25em;
+  font-weight: 300;
+}
+
+.content-prices-m{
+  position: relative;
+  top: 82px;
+}
+
+.a-toggle-tooltip{
+  position: relative;
+  bottom: 15px;
+  left: 10px;
+  color: #edb457;
+}
+
+.a-toggle-tooltip:hover{
+  color: #788E29;
+}
+
+.tooltip-inner{
+  background-color: #e1e1e1;
+  color: #000;
+}
+
+.tooltip.top .tooltip-arrow{
+  border-top-color: #e1e1e1 ;
 }
