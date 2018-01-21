@@ -9,16 +9,40 @@
    <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
   <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
   <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <title>РИС ДДД</title>
   <script>
-    var shiftWindow = function() { scrollBy(0, -100) };
-    window.addEventListener("hashchange", shiftWindow);
-    function load() { if (window.location.hash) shiftWindow(); }
+	$(document).ready(function(){
+ 	$("nav ul li a[href^='#']").on('click', function(e) {
+    // prevent default anchor click behavior
+    e.preventDefault();
+
+    // store hash
+    var hash = this.hash;
+	if (hash == "#services") {
+	   $('html, body').animate({scrollTop: 0}, 1000, 'swing'); 
+		//window.location.hash = "";
+	} else {
+		var scrollToPosition = $(hash).offset().top - 100;
+		$('html, body').animate({scrollTop: scrollToPosition}, 1000, 'swing');
+	}
+	// animate
+	window.location.hash = hash;
+	return false;
+  });
+	console.log($("#about").offset().top);
+    $('[data-toggle="tooltip"]').tooltip();
+
+  });
   </script>
 </head>
-<body onload="load()">
-<header class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+<body>
+<div class="header-wrapper" style="min-height:136px">
+<header class="navbar navbar-inverse" data-spy="affix" data-offset-top="197" >
   <div class="container-header" id="services">
     <div class="container-logo">
 
@@ -46,6 +70,7 @@
     </nav>
   </div>
 </header>
+</div>
 
 <main>
   <section class="white-section" >
@@ -300,44 +325,5 @@
 
 
 </main>
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-
-<script>
-  $(document).ready(function(){
- 	$("nav ul li a[href^='#']").on('click', function(e) {
-
-    // prevent default anchor click behavior
-    e.preventDefault();
-
-    // store hash
-    var hash = this.hash;
-	
-	if (hash == "#services") {
-	   $('html, body').animate({scrollTop: 0}, 1000, function(){// when done, add hash to url
-				// (default click behaviour)
-				window.location.hash = hash;
-				}); 
-		//window.location.hash = "";
-	} else {
-		$('html, body').animate({scrollTop: $(hash).offset().top}, 1000, function(){// when done, add hash to url
-				// (default click behaviour)
-				window.location.hash = hash;
-				}
-		);
-	}
-	// animate
-    
-	
-  });
-
-    $('[data-toggle="tooltip"]').tooltip();
-
-  });
-
-</script>
 </body>
 </html>
