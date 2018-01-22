@@ -147,13 +147,15 @@ section {
 }
 
 section.section-space{
-  position: relative;
-  top: 50px;
+  /*position: relative;*/
+  /*top: 50px;*/
+  margin: 0 0 0.857em 0;
 }
 
 section.white-section{
   margin: 0 auto;
   background-color:#fff;
+  padding: 13px 0;
 }
 
 h3{
@@ -188,7 +190,13 @@ p {
   text-align: justify;
 }
 
+.float-right{
+  float: right;
+}
 
+.float-left{
+  float: left;
+}
 /*---------------Main content-------------*/
 .wrapper{
   max-width: 1000px;
@@ -217,13 +225,14 @@ p {
 .img-services{
   width: 60%;
   border-radius: 8px;
-  margin: 20px 0;
 }
 
 .half-section p{
   text-align: justify;
   margin-right: 40px;
 }
+
+
 
 /*---------------About------------*/
 .client-box, .products-box {
@@ -306,7 +315,8 @@ p.strong{
 }
 
 .img-circle{
-
+max-width: 200px;
+  margin-bottom: 30px;
 }
 
 .align-left{
