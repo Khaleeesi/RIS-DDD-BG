@@ -27,6 +27,8 @@ header{
 header.navbar-inverse.affix{
   background-color: #e5ccb8;
   z-index: 1000;
+  transition: opacity 1s,background 1s;
+  -webkit-transition: opacity 1s,background 1s;
 }
 /*#edb358;*/
 
@@ -323,10 +325,51 @@ max-width: 200px;
   text-align: left;
 }
 
+.align-center{
+  text-align: center;
+}
+
+.address{
+  font-size: 0.67em;
+  margin: 1.286em 0;
+  font-weight: 600;
+}
+
 strong{
   font-weight: 500;
 }
 
 .client-box{
   margin: 25px 5px 25px 0;
+}
+
+textarea.form-control {
+  height: 130px;
+}
+
+.btn.btn-send{
+  background-color: #15aba3;
+}
+
+#contact{
+  display: block;
+  position: relative;
+  z-index: 0;
+  background-color: #e6ccb8;
+}
+
+#contact::before{
+  content: ' ';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../images/cover1_insects_br.jpg") no-repeat center;
+  background-size:  100% 100%;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
