@@ -116,7 +116,7 @@ header.navbar-inverse.affix nav{
 }
 
 header.navbar-inverse.affix{
-  background-color: #ffeaa7;
+  background-color: #d0eeec;
   z-index: 1000;
   transition: opacity 1s,background 1s;
   -webkit-transition: opacity 1s,background 1s;
