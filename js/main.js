@@ -16,8 +16,7 @@ $(document).ready(function(){
     window.location.hash = hash;
     return false;
   });
-    $('[data-toggle="tooltip"]').tooltip();
-    
+
     $(window).scroll(function () {
         if ($("#header").hasClass("affix")) {
                 $('.navbar .container-logo img').attr('src', 'images/LYNX-LOGO_SM.png');
@@ -30,7 +29,7 @@ $(document).ready(function(){
 });
 
 $(function () {
-
+  $('[data-toggle="tooltip"]').tooltip();
   // init the validator
   // validator files are included in the download package
   // otherwise download from http://1000hz.github.io/bootstrap-validator
