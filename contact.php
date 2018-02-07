@@ -1,12 +1,12 @@
 <?php
 // an email address that will be in the From field of the email.
-$from = 'Demo contact form <demo@domain.com>';
+$from = 'info@risddd.com';
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'Demo contact form <info@risddd.com>';
+$sendTo = 'info@risddd.com';
 
 // subject of the email
-$subject = 'New message from contact form';
+$subject = 'Ново съобщение от сайт risddd.com';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
@@ -16,14 +16,14 @@ $fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'e
 $okMessage = 'Съобщението е успешно изпратено. Благодарим Ви, ще се свържем с Вас възможно най-скоро!';
 
 // If something goes wrong, we will display this message.
-$errorMessage = 'Грешка при опит за изпращане на формата за съобщяние. Моля, опитайте по-късно.';
+$errorMessage = 'Грешка при опит за изпращане на формата за съобщение. Моля, опитайте по-късно.';
 
 /*
  *  LET'S DO THE SENDING
  */
 
 // if you are not debugging and don't need error reporting, turn this off by error_reporting(0);
-error_reporting(E_ALL & ~E_NOTICE);
+error_reporting(0);
 
 try
 {
@@ -52,8 +52,8 @@ try
     $responseArray = array('type' => 'success', 'message' => $okMessage);
 }
 catch (\Exception $e)
-{
-    $responseArray = array('type' => 'danger', 'message' => $errorMessage);
+{   throw $e;
+    //$responseArray = array('type' => 'danger', 'message' => $errorMessage);
 }
 
 
